@@ -1,0 +1,417 @@
+/* GERAL */
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #e5132c;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.container {
+  padding: 20px 20px 0px 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+}
+
+/* HEADER */
+
+header {
+  background-color: #f2b138;
+  border-radius: 0 0 20px 20px;
+  width: 100%;
+  position: fixed;
+}
+
+.menu {
+  height: 90px;
+  background-color: #e7e7e7;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  border-radius: 0 0 20px 20px;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.menu a {
+  color: #f2b138;
+  font-size: 18px;
+  border-bottom: 2px solid #e5132c;
+  padding: 6px;
+  transition: 0.5s ease-out;
+}
+
+.menu a:hover {
+  background-color: #e5132c;
+  border-radius: 8px;
+}
+
+.menu img {
+  height: 70px;
+}
+
+.menu .list {
+  width: 35px;
+  height: 35px;
+  background-color: #e09914;
+  padding: 10px;
+  border-radius: 20px;
+  display: none;
+}
+
+.menu .list:hover {
+  cursor: pointer;
+}
+
+.ativar {
+  display: block;
+}
+
+.number {
+  text-align: center;
+  align-content: center;
+  height: 50px;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.number span {
+  font-family: "Rubik", sans-serif;
+  display: inline-block;
+  margin-right: 20px;
+  background: linear-gradient(#e5132c, #e09914);
+  color: #f2b138;
+  width: 35px;
+  height: 35px;
+  border: 3px solid #e7e7e7;
+  border-radius: 50%;
+  box-shadow: 3px 3px 8px #252424;
+  transition: 0.5s ease-out;
+}
+
+.number span:last-child {
+  margin-right: 0;
+}
+
+.number span:hover {
+  color: #e5132c;
+  background: #f2b138;
+}
+
+/* PRAZER, GABI */
+
+.bio {
+  background: linear-gradient(#f2b138, #e5132c);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  box-sizing: border-box;
+  padding-top: 160px;
+}
+
+.bio-img {
+  height: 400px;
+  width: auto;
+  align-self: end;
+}
+
+.bio-perfil {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 30px;
+  margin: 30px;
+  border-radius: 10px;
+}
+
+/* PROPOSTAS */
+
+.propostas {
+  background-color: #e7e7e7;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  /* box-sizing: border-box; */
+  /* height: 500px; */
+}
+
+.faq-lista {
+  margin-bottom: 40px;
+}
+
+.faq-lista dt {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  color: #e54;
+}
+
+.faq-lista dt::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 10px;
+  margin-right: 10px;
+  background: #fb5;
+}
+
+.faq-lista dd {
+  font-family: Helvetica, Arial;
+  margin-bottom: 0.5rem;
+  margin-left: 30px;
+}
+
+.js-accordion dd {
+  display: none;
+}
+
+.js-accordion dt::after {
+  content: " ⬎";
+}
+
+.js-accordion dt.ativo::after {
+  content: " ⬏";
+}
+
+.js-accordion dd.ativo {
+  display: block;
+}
+
+dd :nth-child(odd) {
+  background-color: #b3b1b1;
+  padding: 10px;
+  color: black;
+}
+
+dd :nth-child(even) {
+  padding: 10px;
+}
+
+dd p {
+  margin-bottom: 10px;
+}
+
+/* GALERIA */
+
+
+.motivos-h2 {
+  margin-top: 20px;
+}
+
+.galeria {
+  text-align: center;
+  overflow-x: auto;
+  color: #e7e7e7;
+  /* -webkit-overflow-scrolling: touch; */
+}
+
+.galeria::-webkit-scrollbar {
+  width: 5px;
+}
+
+.galeria::-webkit-scrollbar-track {
+  background-color: #e5132c;
+}
+
+.galeria::-webkit-scrollbar-thumb {
+  background-color: #e09914;
+  border-radius: 10px;
+  border: 3px solid #e5132c;
+}
+
+.galeria li img {
+  width: 150px;
+  cursor: pointer;
+  padding: 20px;
+}
+
+.galeria ul {
+  display: flex;
+}
+
+.motivos {
+  padding: 20px;
+  margin: 0 15px 0 15px;
+  align-content: center;
+  text-align: center;
+  font-size: 22px;
+}
+
+.motivos p{
+  display: none;
+} 
+
+.motivos p.ativar {
+  display: block !important;
+}
+
+/* MÍDIAS */
+
+.midias {
+  text-align: center;
+  /* background-color: #e09914; */
+  background: linear-gradient(#f2b138, #e5132c);
+}
+
+.midias-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.santinhos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: end;
+  gap: 30px;
+}
+
+.midias .santinho {
+  max-width: 300px;
+}
+
+.spotify {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.spotify a {
+  color: black;
+  font-size: 18px;
+}
+
+.spotify:hover {
+  scale: 1.1;
+}
+
+/* REDES SOCIAIS */
+
+.social {
+  background-color: #e09914;
+}
+
+.redes {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  padding: 30px;
+}
+
+.rede {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.rede:hover {
+  scale: 1.1;
+}
+
+.rede a {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e5132c;
+}
+
+/* .js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+} */
+
+@media (max-width: 1100px) {
+  .midias-body {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .menu-links {
+    justify-content: center;
+  }
+  .menu-links a {
+    padding: 4px;
+  }
+}
+
+@media (max-width: 860px) {
+  .bio {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+  .bio img {
+    order: 1;
+    align-self: center;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 660px) {
+  .menu {
+    display: flex;
+  }
+  .menu .list {
+    display: block;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    padding: 30px;
+    width: 25vw;
+    height: calc(100vh - 100px);
+    top: 90px;
+    text-align: center;
+    right: 0;
+    z-index: 1;
+    background-color: rgba(55, 55, 55, 0.9);
+  }
+  .menu-links li {
+    margin-bottom: 30px;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 580px) {
+  .propostas {
+    grid-template-columns: 1fr;
+  }
+  .propostas img {
+    justify-self: end;
+  }
+}
