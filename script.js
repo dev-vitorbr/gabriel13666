@@ -9,6 +9,29 @@ function initMenu() {
 }
 initMenu();
 
+const teste = document.querySelectorAll('a');
+
+
+function initScrollSuave() {
+  const linksInternos = document.querySelectorAll('a[href^="#"]');
+
+  function scrollToSection(event) {
+    event.preventDefault();
+    const href = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(href);
+    const topo = section.offsetTop - 150;
+
+    window.scrollTo({
+      top: topo,
+    });
+  }
+
+  linksInternos.forEach((link) => {
+    link.addEventListener("click", scrollToSection);
+  });
+}
+initScrollSuave();
+
 function initAccordion() {
   const accordionList = document.querySelectorAll(".js-accordion dt");
   const activeClass = "ativo";
@@ -49,45 +72,3 @@ function initTabNav() {
   });
 }
 initTabNav();
-
-function initScrollSuave() {
-  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
-
-  function scrollToSection(event) {
-    event.preventDefault();
-    const href = event.currentTarget.getAttribute("href");
-    const section = document.querySelector(href);
-    const topo = section.offsetTop;
-
-    window.scrollTo({
-      top: topo - 160,
-    });
-  }
-
-  linksInternos.forEach((link) => {
-    link.addEventListener("click", scrollToSection);
-  });
-}
-initScrollSuave();
-
-// function initAnimacaoScroll() {
-//   const sections = document.querySelectorAll(".js-scroll");
-
-//   if (sections.length) {
-//     const windowMetade = window.innerHeight * 0.6;
-
-//     function animaScroll() {
-//       sections.forEach((section) => {
-//         const sectionTop = section.getBoundingClientRect().top - windowMetade;
-//         if (sectionTop < 0) {
-//           section.classList.add("ativo");
-//         }
-//       });
-//     }
-
-//     animaScroll();
-
-//     window.addEventListener("scroll", animaScroll);
-//   }
-// }
-// initAnimacaoScroll();

@@ -7,7 +7,7 @@
 
 body {
   background-color: #e5132c;
-  font-family: "IBM Plex Mono", monospace;
+  color: #383434;
 }
 
 .container {
@@ -23,10 +23,11 @@ a {
 }
 
 .title {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 32px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 /* HEADER */
@@ -36,6 +37,7 @@ header {
   border-radius: 0 0 20px 20px;
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 
 .menu {
@@ -59,6 +61,7 @@ header {
 
 .menu a {
   color: #f2b138;
+  font-family: monospace;
   font-size: 18px;
   border-bottom: 2px solid #e5132c;
   padding: 6px;
@@ -145,6 +148,7 @@ header {
   padding: 30px;
   margin: 30px;
   border-radius: 10px;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
 }
 
 /* PROPOSTAS */
@@ -160,14 +164,16 @@ header {
 
 .faq-lista {
   margin-bottom: 40px;
+  margin-left: 50px;
 }
 
 .faq-lista dt {
-  font-family: "IBM Plex Mono", monospace;
+  font-family: "Nunito", Helvetica, Arial, sans-serif;
+  font-size: 20px;
   font-weight: bold;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
-  color: #e54;
+  color: #fc3903;
 }
 
 .faq-lista dt::before {
@@ -180,9 +186,9 @@ header {
 }
 
 .faq-lista dd {
-  font-family: Helvetica, Arial;
-  margin-bottom: 0.5rem;
-  margin-left: 30px;
+  font-family: "Fira Sans", Arial, sans-serif;
+  color: #262323;
+  margin: 10px 0px 0px 30px;
 }
 
 .js-accordion dd {
@@ -204,19 +210,14 @@ header {
 dd :nth-child(odd) {
   background-color: #b3b1b1;
   padding: 10px;
-  color: black;
+  border-radius: 4px;
 }
 
 dd :nth-child(even) {
   padding: 10px;
 }
 
-dd p {
-  margin-bottom: 10px;
-}
-
 /* GALERIA */
-
 
 .motivos-h2 {
   margin-top: 20px;
@@ -246,7 +247,7 @@ dd p {
 .galeria li img {
   width: 150px;
   cursor: pointer;
-  padding: 20px;
+  padding: 10px;
 }
 
 .galeria ul {
@@ -261,12 +262,48 @@ dd p {
   font-size: 22px;
 }
 
-.motivos p{
+.motivos p {
   display: none;
-} 
+}
 
 .motivos p.ativar {
   display: block !important;
+}
+
+/* GALERIA TESTE */
+
+.motivos-h2 {
+  position: relative;
+}
+
+.motivos-h2::after {
+  content: "→";
+  position: absolute;
+  text-align: center;
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  animation: seta 0.5s ease-in 0s infinite alternate;
+}
+
+@keyframes seta {
+  from {
+    margin-left: 20px;
+  }
+  to {
+    margin-left: 30px;
+  }
+}
+
+.galeria.teste div {
+  background-color: #b3b1b1;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 8px;
+  height: 340px;
+}
+
+.galeria.teste div img {
+  width: 180px;
 }
 
 /* MÍDIAS */
@@ -341,13 +378,13 @@ dd p {
   color: #e5132c;
 }
 
-/* .js .js-scroll {
+/* .js-scroll {
   opacity: 0;
   transform: translate3d(-30px, 0, 0);
   transition: .3s;
 }
 
-.js .js-scroll.ativo {
+.js-scroll.ativo {
   opacity: 1;
   transform: translate3d(0, 0, 0);
 } */
@@ -410,6 +447,7 @@ dd p {
 @media (max-width: 580px) {
   .propostas {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   .propostas img {
     justify-self: end;

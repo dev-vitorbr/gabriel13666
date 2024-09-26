@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32"
         href="https://pt.org.br/wp-content/themes/pt_2016/icon/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -16,7 +25,7 @@
         <div class="menu">
             <img src="imagens/logo.png" alt="logo">
             <img class="list" src="imagens/list_red.png" alt="">
-            <nav class="js-menu">
+            <nav>
                 <ul class="menu-links">
                     <li><a href="#bio">Prazer, Gabi!</a></li>
                     <li><a href="#propostas">Propostas</a></li>
@@ -61,61 +70,88 @@
             <dl class="faq-lista js-accordion">
                 <dt>Desenvolvimento Econômico</dt>
                 <dd>
-                    <p>Criar incentivos fiscais para pequenas e médias empresas, com o objetivo de gerar empregos e impulsionar a economia local.</p>
-                    <p>Promover a agricultura familiar, oferecendo suporte técnico e financeiro para os agricultores locais e incentivando a produção sustentável.</p>
-                    <p>Investir em capacitação e empreendedorismo, com cursos profissionalizantes para jovens e adultos.</p>
+                    <p>Criar incentivos fiscais para pequenas e médias empresas, com o objetivo de gerar empregos e
+                        impulsionar a economia local.</p>
+                    <p>Promover a agricultura familiar, oferecendo suporte técnico e financeiro para os agricultores
+                        locais e incentivando a produção sustentável.</p>
+                    <p>Investir em capacitação e empreendedorismo, com cursos profissionalizantes para jovens e adultos.
+                    </p>
                 </dd>
 
                 <dt>Educação e Cultura</dt>
                 <dd>
-                    <p>Ampliar o acesso à educação de qualidade, com melhorias na infraestrutura das escolas e na capacitação dos professores.</p>
-                    <p>Criar programas de inclusão digital para alunos e professores, para garantir o acesso à tecnologia e ao conhecimento online.</p>
-                    <p>Incentivar a cultura local, com apoio a eventos culturais, prêmios para artistas locais e a criação de centros culturais.</p>
+                    <p>Ampliar o acesso à educação de qualidade, com melhorias na infraestrutura das escolas e na
+                        capacitação dos professores.</p>
+                    <p>Criar programas de inclusão digital para alunos e professores, para garantir o acesso à
+                        tecnologia e ao conhecimento online.</p>
+                    <p>Incentivar a cultura local, com apoio a eventos culturais, prêmios para artistas locais e a
+                        criação de centros culturais.</p>
                 </dd>
 
                 <dt>Saúde e Bem-Estar</dt>
                 <dd>
-                    <p>Fortalecer o atendimento primário à saúde, com a contratação de mais médicos e enfermeiros e a ampliação do horário de funcionamento das unidades de saúde.</p>
-                    <p>Implementar programas de prevenção e combate ao uso de drogas, com campanhas de conscientização e apoio a recuperação de dependentes.</p>
-                    <p>Investir em saneamento básico, com projetos para a ampliação da rede de água e esgoto, melhorando a qualidade de vida da população.</p>
+                    <p>Fortalecer o atendimento primário à saúde, com a contratação de mais médicos e enfermeiros e a
+                        ampliação do horário de funcionamento das unidades de saúde.</p>
+                    <p>Implementar programas de prevenção e combate ao uso de drogas, com campanhas de conscientização e
+                        apoio a recuperação de dependentes.</p>
+                    <p>Investir em saneamento básico, com projetos para a ampliação da rede de água e esgoto, melhorando
+                        a qualidade de vida da população.</p>
                 </dd>
 
                 <dt>Infraestrutura e Mobilidade</dt>
                 <dd>
-                    <p>Cobrar junto ao executivo o patrolamento periódico das estradas rurais,facilitando o escoamento de produtos e a mobilidade dos moradores.</p>
-                    <p>Criar projetos de urbanização para as áreas mais carentes, com foco em habitação e melhoria dos espaços públicos.</p>
+                    <p>Cobrar junto ao executivo o patrolamento periódico das estradas rurais,facilitando o escoamento
+                        de produtos e a mobilidade dos moradores.</p>
+                    <p>Criar projetos de urbanização para as áreas mais carentes, com foco em habitação e melhoria dos
+                        espaços públicos.</p>
                     <p>Apoio ao projeto REURB que vem sendo executado no município.</p>
                 </dd>
 
                 <dt>Meio Ambiente e Sustentabilidade</dt>
                 <dd>
-                    <p>Implementar projetos de reflorestamento e conservação das áreas nativas, com a participação da comunidade local.</p>
-                    <p>Promover o uso de energias renováveis, como solar e eólica, incentivando residências e empresas a adotarem essas tecnologias.</p>
-                    <p>Criar programas de educação ambiental para sensibilizar a população sobre a importância da preservação dos recursos naturais.</p>
+                    <p>Implementar projetos de reflorestamento e conservação das áreas nativas, com a participação da
+                        comunidade local.</p>
+                    <p>Promover o uso de energias renováveis, como solar e eólica, incentivando residências e empresas a
+                        adotarem essas tecnologias.</p>
+                    <p>Criar programas de educação ambiental para sensibilizar a população sobre a importância da
+                        preservação dos recursos naturais.</p>
                 </dd>
 
                 <dt>Esportes</dt>
                 <dd>
-                    <p>Investir na reforma e manutenção de quadras, campos e ginásios esportivos, garantindo condições seguras e adequadas para a prática de esportes.</p>
-                    <p>Criar espaços esportivos multiuso em comunidades que ainda não têm acesso, fomentando a prática de diversas modalidades esportivas.</p>
-                    <p>Implementar um programa de voucher esportivo, oferecendo subsídios para que crianças e adolescentes de famílias de baixa renda possam participar de atividades esportivas em clubes e academias.</p>
-                    <p>Criar campeonatos e torneios escolares que incentivem a participação dos jovens e promovam a interação entre escolas.</p>
-                    <p>Estabelecer parcerias com associações esportivas locais para promover eventos esportivos nas comunidades, fortalecendo a cultura esportiva local.</p>
-                    <p>Apoiar e estimular o trabalho de ONGs e projetos sociais que utilizem o esporte como ferramenta de inclusão e desenvolvimento social.</p>
-                    <p>Criar programas e campanhas que incentivem a participação de mulheres e meninas no esporte, garantindo igualdade de oportunidades e visibilidade.</p>
-                    <p>Oferecer apoio financeiro e logístico para a realização de campeonatos e eventos de esportes femininos.</p>
-                    <p>Promover atividades físicas regulares em espaços públicos, com a oferta de aulas gratuitas de zumba, yoga, caminhadas orientadas, entre outras.</p>
-                    <p>Realizar campanhas de conscientização sobre os benefícios do esporte para a saúde física e mental, envolvendo também a comunidade médica local.</p>
-                    <p>Desenvolver programas esportivos inclusivos que atendam pessoas com deficiência, garantindo a acessibilidade de espaços esportivos e a oferta de modalidades adaptadas.</p>
-                    <p>Fomentar parcerias com entidades especializadas para promover eventos e competições paralímpicas.</p>
+                    <p>Investir na reforma e manutenção de quadras, campos e ginásios esportivos, garantindo condições
+                        seguras e adequadas para a prática de esportes.</p>
+                    <p>Criar espaços esportivos multiuso em comunidades que ainda não têm acesso, fomentando a prática
+                        de diversas modalidades esportivas.</p>
+                    <p>Implementar um programa de voucher esportivo, oferecendo subsídios para que crianças e
+                        adolescentes de famílias de baixa renda possam participar de atividades esportivas em clubes e
+                        academias.</p>
+                    <p>Criar campeonatos e torneios escolares que incentivem a participação dos jovens e promovam a
+                        interação entre escolas.</p>
+                    <p>Estabelecer parcerias com associações esportivas locais para promover eventos esportivos nas
+                        comunidades, fortalecendo a cultura esportiva local.</p>
+                    <p>Apoiar e estimular o trabalho de ONGs e projetos sociais que utilizem o esporte como ferramenta
+                        de inclusão e desenvolvimento social.</p>
+                    <p>Criar programas e campanhas que incentivem a participação de mulheres e meninas no esporte,
+                        garantindo igualdade de oportunidades e visibilidade.</p>
+                    <p>Oferecer apoio financeiro e logístico para a realização de campeonatos e eventos de esportes
+                        femininos.</p>
+                    <p>Promover atividades físicas regulares em espaços públicos, com a oferta de aulas gratuitas de
+                        zumba, yoga, caminhadas orientadas, entre outras.</p>
+                    <p>Realizar campanhas de conscientização sobre os benefícios do esporte para a saúde física e
+                        mental, envolvendo também a comunidade médica local.</p>
+                    <p>Desenvolver programas esportivos inclusivos que atendam pessoas com deficiência, garantindo a
+                        acessibilidade de espaços esportivos e a oferta de modalidades adaptadas.</p>
+                    <p>Fomentar parcerias com entidades especializadas para promover eventos e competições paralímpicas.
+                    </p>
                 </dd>
-                
+
             </dl>
         </div>
         <img class="bio-img" src="imagens/perfil2.png" alt="">
     </section>
 
-    <h2 class="title motivos-h2">13 Motivos para Votar</h2>
+    <!-- <h2 class="title motivos-h2">13 Motivos para Votar</h2>
     <section class="galeria container" id="galeria">
         <ul>
             <li>1<img src="imagens/motivos/direito.jpg" alt=""></li>
@@ -138,22 +174,120 @@
         <p>É técnico em zootecnia pelo IFNMG</p>
         <p>É apaixonado por esportes e vai brigar na Câmara para que o esporte tenha cada vez mais incentivo na cidade
         </p>
-        <p>Apoia a diversidade e vai lutar para que todos cidadão jequitinhonhenses sejam respeitados, independente de
-            orientação sexual, credo, gênero ou raça</p>
+        <p>Apoia a diversidade e os direitos humanos</p>
         <p>Defende o produtor rural e uma agricultura cada vez mais sustentável e amiga do meio ambiente</p>
         <p>Não dispensa uma cavalgada</p>
         <p>Ama as crianças e vai garantir que o Estatuto da Criança e do Adolescente seja cumprido em Jequitinhonha</p>
         <p>É flamenguista apaixonado</p>
         <p>É jovem, e vai levar todo o ânimo e vigor da juventude para o seu mandato</p>
-        <p>Foi às ruas protestar contra o golpe de 2016 contra Dilma Rousseff</p>
+        <p>Foi às ruas protestar contra o golpe de 2016 sofrido por Dilma Rousseff</p>
         <p>Há 3 anos é o chefe de gabinete da Prefeitura Municipal de Jequitinhonha</p>
         <p>Ele está com Nilo!</p>
         <p>Ele está com Lula!</p>
-    </div>
+    </div> -->
+
+    <h2 class="title motivos-h2" id="galeria">13 Motivos para Votar</h2>
+    <section class="galeria container teste">
+        <ul>
+            <li>
+                <div>
+                    <span>1</span>
+                    <img src="imagens/motivos/direito.jpg" alt="">
+                    <p>Gabriel é bacharel em Direito e aprovado na OAB</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>2</span>
+                    <img src="imagens/motivos/zootecnia.jpg" alt="">
+                    <p>É técnico em zootecnia pelo IFNMG</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>3</span>
+                    <img src="imagens/motivos/esporte.jpg" alt="">
+                    <p>É apaixonado por esportes e vai brigar na Câmara para que o esporte tenha cada vez mais incentivo
+                        na cidade</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>4</span>
+                    <img src="imagens/motivos/diversidade.jpeg" alt="">
+                    <p>Apoia a diversidade e os direitos humanos</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>5</span>
+                    <img src="imagens/motivos/zona_rural.jpg" alt="">
+                    <p>Defende o produtor rural e uma agricultura cada vez mais sustentável e amiga do meio ambiente</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>6</span>
+                    <img src="imagens/motivos/cavalgada.jpeg" alt="">
+                    <p>Não dispensa uma cavalgada</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>7</span>
+                    <img src="imagens/motivos/criança.jpg" alt="">
+                    <p>Ama as crianças e vai garantir que o Estatuto da Criança e do Adolescente seja cumprido em
+                        Jequitinhonha</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>8</span>
+                    <img src="imagens/motivos/flamengo.jpg" alt="">
+                    <p>É flamenguista apaixonado</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>9</span>
+                    <img src="imagens/motivos/juventude.jpg" alt="">
+                    <p>É jovem, e vai levar todo o ânimo e vigor da juventude para o seu mandato</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>10</span>
+                    <img src="imagens/motivos/golpe.jpg" alt="">
+                    <p>Foi às ruas protestar contra o golpe de 2016 sofrido por Dilma Rousseff</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>11</span>
+                    <img src="imagens/motivos/gabinete.jpeg" alt="">
+                    <p>Há 3 anos é o chefe de gabinete da Prefeitura Municipal de Jequitinhonha</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>12</span>
+                    <img src="imagens/motivos/nilo.jpeg" alt="">
+                    <p>Ele está com Nilo!</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <span>13</span>
+                    <img src="imagens/motivos/lula.jpg" alt="">
+                    <p>Ele está com Lula!</p>
+                </div>
+            </li>
+        </ul>
+    </section>
 
 
     <section class="midias container" id="compartilhe">
-        <h2 class="title">Minhas Mídias</h2>
+        <h2 class="title">Compartilhe no WhatsApp</h2>
         <div class="midias-body">
             <div class="santinhos">
                 <img src="imagens/santinho1.png" class="santinho" alt="santinho 1">
@@ -166,6 +300,7 @@
                     href="https://open.spotify.com/intl-pt/album/5xltRW1hSVi0OmOiscICtj?si=XI8mG-rvTL2C4nbnXc1lNA&nd=1&dlsi=25271b9d4cbf41a4#login">Ouça
                     meu jingle no Spotify</a>
             </div>
+            <p>Ou dê o play:</p>
             <audio controls src="audios/jingle.wav"></audio>
         </div>
     </section>
