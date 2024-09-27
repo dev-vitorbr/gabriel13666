@@ -9,9 +9,6 @@ function initMenu() {
 }
 initMenu();
 
-const teste = document.querySelectorAll('a');
-
-
 function initScrollSuave() {
   const linksInternos = document.querySelectorAll('a[href^="#"]');
 
@@ -19,7 +16,7 @@ function initScrollSuave() {
     event.preventDefault();
     const href = event.currentTarget.getAttribute("href");
     const section = document.querySelector(href);
-    const topo = section.offsetTop - 150;
+    const topo = section.offsetTop - 140;
 
     window.scrollTo({
       top: topo,
