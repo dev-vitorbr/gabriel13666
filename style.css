@@ -81,9 +81,9 @@ header {
 .menu .list {
   width: 35px;
   height: 35px;
-  background-color: #e09914;
-  padding: 10px;
-  border-radius: 20px;
+  background-color: #f2b138;
+  padding: 8px;
+  border-radius: 15px;
   display: none;
 }
 
