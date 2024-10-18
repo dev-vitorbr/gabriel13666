@@ -449,9 +449,7 @@ dd :nth-child(even) {
   .propostas img {
     justify-self: end;
   }
-  nav {
-    top: 75px;
-  }
+  
   .faq-lista {
     margin-bottom: 0px;
     margin-left: 10px;
@@ -472,6 +470,9 @@ dd :nth-child(even) {
   .number span {
     width: 30px;
     height: 30px;
+  }
+  nav {
+    top: 75px;
   }
   .faq-lista dt {
     font-size: 18px;
